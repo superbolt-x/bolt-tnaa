@@ -8,12 +8,14 @@ ad_id,
 campaign_name,
 campaign_id,
 campaign_status,
-CASE WHEN campaign_name ~* 'Search' AND campaign_name ~* 'NB' THEN 'Campaign Type: Search Nonbrand'
-    WHEN campaign_name ~* 'Search' AND campaign_name !~* 'NB' THEN 'Campaign Type: Search Branded'
-    WHEN campaign_name ~* 'Performance Max' OR campaign_name ~* 'PMax' THEN 'Campaign Type: Performance Max'
-    WHEN campaign_name ~* 'DSA' THEN 'Campaign Type: DSA'
-    ELSE 'Campaign Type: Other'
-END as campaign_type_default,
+campaign_type_default,
+CASE WHEN campaign_name ~* 'NB' AND campaign_name !~* 'DSA' AND campaign_name !~* 'Allentown' THEN 'Unbrand - US'
+    WHEN campaign_name ~* 'NB' AND campaign_name ~* 'Allentown' THEN 'Unbrand - Allentown'
+    WHEN campaign_name ~* 'Brand' THEN 'Brand'
+    WHEN campaign_name ~* 'Performance Max' THEN 'Performance Max'
+    WHEN campaign_name ~* 'DSA' THEN 'DSA'
+    ELSE 'Others'
+END as campaign_type_custom,
 ad_group_name,
 ad_group_id,
 date,
