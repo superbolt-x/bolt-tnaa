@@ -9,7 +9,7 @@ campaign_id,
 campaign_status,
 campaign_type_default,
 CASE WHEN campaign_name ~* 'NB' AND campaign_name !~* 'DSA' AND campaign_name !~* 'Allentown' THEN 'Unbrand - US'
-    WHEN campaign_name ~* 'NB' AND campaign_name ~* 'Allentown' THEN 'Unbrand - Allentown'
+    WHEN campaign_name ~* 'Allentown' THEN 'Unbrand - Allentown'
     WHEN campaign_name ~* 'Brand' THEN 'Brand'
     WHEN campaign_name ~* 'Performance Max' THEN 'Performance Max'
     WHEN campaign_name ~* 'DSA' THEN 'DSA'
