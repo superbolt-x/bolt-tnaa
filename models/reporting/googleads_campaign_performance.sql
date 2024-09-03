@@ -23,6 +23,8 @@ impressions,
 clicks,
 conversions as purchases,
 conversions_value as revenue,
+"Unbounce Form Submission V. 2" as unbounce_leads,
+"http://tnaa.com - GA4 (web) slimFormSubmitV2" as slimform_leads,
 search_impression_share,
 search_budget_lost_impression_share,
 search_rank_lost_impression_share
