@@ -26,6 +26,6 @@ impressions,
 clicks,
 conversions as purchases,
 conversions_value as revenue,
-"Unbounce Form Submission V. 2" as unbounce_leads,
-"http://tnaa.com - GA4 (web) slimFormSubmitV2" as slimform_leads
+unbounceformsubmissionv2 as unbounce_leads,
+httptnaacomga4webslimformsubmitv2 as slimform_leads
 FROM {{ ref('googleads_performance_by_ad') }}
