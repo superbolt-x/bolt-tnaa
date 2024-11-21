@@ -30,5 +30,10 @@ clicks,
 conversions as purchases,
 conversions_value as revenue,
 unbounceformsubmissionv2 as unbounce_leads,
-httptnaacomga4webslimformsubmitv2 as slimform_leads
+httptnaacomga4webslimformsubmitv2 as slimform_leads,
+dwlead as dw_leads,
+dwapp as dw_apps,
+dwabs as dw_abs,
+dwsubmission as dw_submissions,
+dwassignment as dw_assignments
 FROM {{ ref('googleads_performance_by_ad') }}
