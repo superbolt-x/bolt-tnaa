@@ -14,6 +14,7 @@ CASE
     WHEN campaign_name ~* 'Allentown' THEN 'Unbrand - Allentown'
     WHEN campaign_name ~* 'Southport' THEN 'Unbrand - Southport'
     WHEN campaign_name ~* 'Spokane' THEN 'Unbrand - Spokane' 
+    WHEN campaign_name ~* 'Baptist' THEN 'Unbrand - Baptist' 
     WHEN campaign_name ~* 'Brand' THEN 'Brand'
     WHEN campaign_name ~* 'Performance Max' THEN 'Performance Max'
     WHEN campaign_name ~* 'DSA' THEN 'DSA'
