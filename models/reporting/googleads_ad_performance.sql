@@ -11,11 +11,13 @@ campaign_status,
 campaign_type_default,
 CASE 
     WHEN campaign_name ~* 'NB' AND campaign_name ~* 'Allied' THEN 'Unbrand - Allied'
-    WHEN (campaign_name ~* 'NB' AND campaign_name !~* 'DSA' AND campaign_name !~* 'Allentown') OR (campaign_name ~* 'Competitor') THEN 'Unbrand - US'
-    WHEN campaign_name ~* 'Allentown' THEN 'Unbrand - Allentown'
-    WHEN campaign_name ~* 'Southport' THEN 'Unbrand - Southport'
-    WHEN campaign_name ~* 'Spokane' THEN 'Unbrand - Spokane' 
-    WHEN campaign_name ~* 'Baptist' THEN 'Unbrand - Baptist' 
+    WHEN (campaign_name ~* 'NB' AND campaign_name !~* 'DSA' AND campaign_name !~* 'Location') OR (campaign_name ~* 'Competitor') THEN 'Unbrand - US'
+    WHEN campaign_name ~* 'Allentown' THEN 'Location - Allentown'
+    WHEN campaign_name ~* 'Southport' THEN 'Location - Southport'
+    WHEN campaign_name ~* 'Spokane' THEN 'Location - Spokane' 
+    WHEN campaign_name ~* 'Baptist' THEN 'Location - Baptist' 
+    WHEN campaign_name ~* 'Willis Knighton' THEN 'Location - Willis Knighton' 
+    WHEN campaign_name ~* 'Shannon Health' THEN 'Location - Shannon Health' 
     WHEN campaign_name ~* 'Brand' THEN 'Brand'
     WHEN campaign_name ~* 'Performance Max' THEN 'Performance Max'
     WHEN campaign_name ~* 'DSA' THEN 'DSA'
