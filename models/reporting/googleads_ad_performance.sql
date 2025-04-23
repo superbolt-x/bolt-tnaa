@@ -18,6 +18,8 @@ CASE
     WHEN campaign_name ~* 'Baptist' THEN 'Location - Baptist' 
     WHEN campaign_name ~* 'Willis Knighton' THEN 'Location - Willis Knighton' 
     WHEN campaign_name ~* 'Shannon Health' THEN 'Location - Shannon Health' 
+    WHEN campaign_name ~* 'AR Childrens' THEN 'Location - AR Childrens' 
+    WHEN campaign_name ~* 'UofL Health' THEN 'Location - UofL Health' 
     WHEN campaign_name ~* 'Brand' THEN 'Brand'
     WHEN campaign_name ~* 'Performance Max' THEN 'Performance Max'
     WHEN campaign_name ~* 'DSA' THEN 'DSA'
