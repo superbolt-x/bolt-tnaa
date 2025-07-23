@@ -21,6 +21,7 @@ CASE
     WHEN campaign_name ~* 'AR Childrens' THEN 'Location - AR Childrens' 
     WHEN campaign_name ~* 'UofL Health' THEN 'Location - UofL Health'
     WHEN campaign_name ~* 'Puget Sound' THEN 'Location - Puget Sound'
+    WHEN campaign_name ~* 'Parrish' THEN 'Location - Parrish'
     WHEN campaign_name ~* 'Brand' THEN 'Brand'
     WHEN campaign_name ~* 'Performance Max' THEN 'Performance Max'
     WHEN campaign_name ~* 'DSA' THEN 'DSA'
