@@ -11,7 +11,8 @@ campaign_status,
 campaign_type_default,
 CASE 
     WHEN campaign_name ~* 'NB' AND campaign_name ~* 'Allied' THEN 'Unbrand - Allied'
-    WHEN (campaign_name ~* 'Search - NB -') OR (campaign_name ~* 'Competitor') THEN 'Unbrand - US'
+    WHEN (campaign_name ~* 'Competitor') THEN 'Unbrand - US'
+    WHEN (campaign_name ~* 'Search - NB -') THEN 'Location Unbranded'
     WHEN campaign_name ~* 'Allentown' THEN 'Location - Allentown'
     WHEN campaign_name ~* 'Southport' THEN 'Location - Southport'
     WHEN campaign_name ~* 'Spokane' THEN 'Location - Spokane' 
